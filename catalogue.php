@@ -21,9 +21,12 @@
 </header>
 
 <main>
-    <div>
+    <?php
+$products = ["Canapé", "Fauteuil", "Guénael"]; ?>
+    <?php echo $products[0] ?>
 
-    </div>
+
+
 </main>
 
 <footer>
