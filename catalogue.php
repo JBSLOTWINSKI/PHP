@@ -1,26 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SLOTWINSKI Jean-Baptiste</title>
-    <meta name="description" content="">
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-
-
-<body>
-<header>
-    <?php include("header.php"); ?>
-</header>
-
-<main>
     <?php
         $products = [
             [
@@ -44,21 +21,39 @@
                 'discount' => '0',
                 'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
             ],
-
-
         ]
-        ?>
+    ?>
+
+
+    <?php include("header.php"); ?>
+
 
     <div>
+        <p><?php foreach ($products as $produit) {
+            echo $produit['nom'];
+            } ?>
+        </p>
+    </div>
 
+    <div>
+        <p><?php
+            for($i=0;$i<=3;$i++){
+                echo $products[$i]['nom'];
+            }
+            ?>
+        </p>
+    </div>
+
+    <div>
+        <p><?php
+            $i = 0;
+            while ($i <= 3):
+                echo $products[$i]['nom'];
+                $i++;
+            endwhile;
+            ?>
+        </p>
     </div>
 
 
-</main>
-
-<footer>
     <?php include("footer.php"); ?>
-</footer>
-</body>
-
-</html>

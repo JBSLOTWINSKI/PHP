@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -18,10 +15,6 @@
 
 
 <body>
-<header>
-</header>
-
-<main>
     <header class="header">
         <div>
             <div class="header-top"></div>
@@ -38,12 +31,4 @@
             </div>
         </div>
         <hr class="hchier">
-
     </header>
-</main>
-
-<footer>
-</footer>
-</body>
-
-</html>

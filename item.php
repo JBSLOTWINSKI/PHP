@@ -4,28 +4,11 @@ $prix = '4000€';
 $photo = 'assets/img/canap1.jpg';
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SLOTWINSKI Jean-Baptiste</title>
-    <meta name="description" content="">
-
-    <link rel="stylesheet" href="styles.css">
-
-</head>
+<?php include("header.php"); ?>
 
 
 
-<body>
-<header>
-    <?php include("header.php"); ?>
-</header>
-
-<main>
     <div class="full-produit">
         <img src="<?php echo $photo ?>" class="w-50 p-3 img-fluid object-fit-cover float-start" alt="photo_canapé_4">
         <div class="text-produit">
@@ -39,11 +22,8 @@ $photo = 'assets/img/canap1.jpg';
             <button class="btn btn-outline-dark" type="submit">Ajouter au panier</button>
         </div>
     </div>
-</main>
 
-<footer>
-    <?php include("footer.php"); ?>
-</footer>
-</body>
 
-</html>
+
+<?php include("footer.php"); ?>
+
