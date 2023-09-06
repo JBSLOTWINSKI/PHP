@@ -1,3 +1,5 @@
+<?php include('my-functions.php');?>
+
 <?php
 $nom = 'Loki';
 $prix = '4000€';

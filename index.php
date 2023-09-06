@@ -1,3 +1,5 @@
+<?php include('my-functions.php');?>
+
 <?php include("header.php"); ?>
 
 <!--    --><?php

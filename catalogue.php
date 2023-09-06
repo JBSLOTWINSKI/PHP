@@ -1,4 +1,5 @@
     <?php
+    include('my-functions.php');
         $products = [
             [
                 'nom' => 'Loki',
@@ -38,7 +39,7 @@
     <div>
         <p><?php
             for($i=0;$i<=3;$i++){
-                echo $products[$i]['nom'];
+                echo $products[$i]["nom"];
             }
             ?>
         </p>
@@ -47,13 +48,25 @@
     <div>
         <p><?php
             $i = 0;
-            while ($i <= 3):
+            while ($i <= 3){
                 echo $products[$i]['nom'];
-                $i++;
-            endwhile;
+                $i++;}
             ?>
         </p>
     </div>
 
 
-    <?php include("footer.php"); ?>
+    <div>
+        <p><?php
+            $i = 0;
+            do{
+                echo $products[$i]['nom'];
+                $i++;
+            }
+            while ($i <= 2);
+            ?>
+        </p>
+    </div>
+
+
+    <?php include("footer.php");?>
