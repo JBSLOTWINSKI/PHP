@@ -29,8 +29,6 @@ $products = [
 include('header.php');
 ?>
 
-
-
     <h1>Ma boutique</h1>
     <ul class="products">
         <?php foreach($products as $product): ?>

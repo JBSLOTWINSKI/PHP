@@ -12,3 +12,4 @@ function priceExcludingTVA($price){
 function discountedPrice($price, $discount) {
     return $price - ($price * $discount /100);
 }
+
