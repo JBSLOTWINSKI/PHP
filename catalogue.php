@@ -1,72 +1,50 @@
-    <?php
-    include('my-functions.php');
-        $products = [
-            [
-                'nom' => 'Loki',
-                'prix' => '4000',
-                'weight' => '190',
-                'discount' => '0',
-                'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
-            ],
-            [
-                'nom' => 'Kilo',
-                'prix' => '3500',
-                'weight' => '150',
-                'discount' => '0',
-                'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
-            ],
-            [
-                'nom' => 'Liko',
-                'prix' => '4600',
-                'weight' => '250',
-                'discount' => '0',
-                'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
-            ],
-        ]
-    ?>
+<?php
+include('my-functions.php');
+
+// Traitement de vos données ici
+$products = [
+    [
+        'name' => 'Loki',
+        'prix' => '4000',
+        'weight' => '190',
+        'discount' => '17',
+        'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
+    ],
+    [
+        'name' => 'Kilo',
+        'prix' => '3500',
+        'weight' => '150',
+        'discount' => '5',
+        'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
+    ],
+    [
+        'name' => 'Liko',
+        'prix' => '4600',
+        'weight' => '250',
+        'discount' => '38',
+        'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
+    ],
+];
 
 
-    <?php include("header.php"); ?>
+include('header.php');
+?>
 
 
-    <div>
-        <p><?php foreach ($products as $produit) {
-            echo $produit['nom'];
-            } ?>
-        </p>
-    </div>
 
-    <div>
-        <p><?php
-            for($i=0;$i<=3;$i++){
-                echo $products[$i]["nom"];
-            }
-            ?>
-        </p>
-    </div>
-
-    <div>
-        <p><?php
-            $i = 0;
-            while ($i <= 3){
-                echo $products[$i]['nom'];
-                $i++;}
-            ?>
-        </p>
-    </div>
+    <h1>Ma boutique</h1>
+    <ul class="products">
+        <?php foreach($products as $product): ?>
+            <li class="product">
+                <h2 class="product-title"><?php echo $product['name']; ?></h2>
+                <img class="img_product" src="<?php echo $product['picture_url'] ?>" alt="emoji amex">
+                <p class="prix_ttc">  </p>
+                <p class="prix_ttc">  </p>
+                <p class="prix_ttc">  </p>
+                <p class="prix_ttc">  </p>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 
 
-    <div>
-        <p><?php
-            $i = 0;
-            do{
-                echo $products[$i]['nom'];
-                $i++;
-            }
-            while ($i <= 2);
-            ?>
-        </p>
-    </div>
-
-
-    <?php include("footer.php");?>
+<?php include('footer.php'); ?>

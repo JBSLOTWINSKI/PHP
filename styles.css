@@ -28,11 +28,24 @@ html {
     font-size: var(--font-size);
 }
 
+
+
 body {
     font-family: 'Playfair', sans-serif;
     line-height: 1.5;
     color: var(--color-text);
+    margin: 0px;
+
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 50px;
+}
+
 
 * {
     box-sizing: border-box;
@@ -151,6 +164,12 @@ ol {
 }
 
 /* Page Produit */
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* footer */
 
