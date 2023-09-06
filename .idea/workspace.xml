@@ -7,10 +7,7 @@
     <list default="true" id="4e73b01f-7f7f-4420-a162-7764d66c5267" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/my-functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <workItem from="1693819862604" duration="36000" />
       <workItem from="1693820026525" duration="9547000" />
       <workItem from="1693898905571" duration="19887000" />
-      <workItem from="1693984106884" duration="13017000" />
+      <workItem from="1693984106884" duration="16589000" />
     </task>
     <servers />
   </component>
