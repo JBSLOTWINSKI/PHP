@@ -1,37 +1,14 @@
 <?php
-include('my-functions.php');
-
-$products = [
-    [
-        'name' => 'Loki',
-        'price' => '4000',
-        'weight' => '190',
-        'discount' => '17',
-        'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
-    ],
-    [
-        'name' => 'Kilo',
-        'price' => '3500',
-        'weight' => '150',
-        'discount' => '5',
-        'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
-    ],
-    [
-        'name' => 'Liko',
-        'price' => '4600',
-        'weight' => '250',
-        'discount' => '38',
-        'picture_url' => 'https://medias.maisonsdumonde.com/images/ar_1:1,c_pad,f_auto,q_auto,w_354/v1/mkp/M21062135_1/canape-3-places-en-velours-vert-anglais-fixe-droit.jpg'
-    ],
-];
+include('templates/header.php');
+include('functions/my-functions.php');
+include('functions/my_products.php');
 
 
-include('header.php');
 ?>
 
     <h1>Ma boutique</h1>
     <ul class="products">
-        <?php foreach($products as $product): ?>
+        <?php foreach(getProducts() as $product): ?>
             <li class="product">
                 <h2 class="product-title"><?php echo $product['name']; ?></h2>
                 <img class="img_product" src="<?php echo $product['picture_url'] ?>" alt="emoji amex">
@@ -60,4 +37,4 @@ include('header.php');
     </ul>
 
 
-<?php include('footer.php'); ?>
+<?php include('templates/footer.php'); ?>

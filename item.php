@@ -1,13 +1,14 @@
-<?php include('my-functions.php');?>
+<?php
+include('functions/my-functions.php');
+include('functions/my_products.php');
+include("templates/header.php");
+?>
 
 <?php
 $nom = 'Loki';
 $prix = '4000€';
 $photo = 'assets/img/canap1.jpg';
 ?>
-
-
-<?php include("header.php"); ?>
 
 
 
@@ -27,5 +28,5 @@ $photo = 'assets/img/canap1.jpg';
 
 
 
-<?php include("footer.php"); ?>
+<?php include("templates/footer.php"); ?>
 

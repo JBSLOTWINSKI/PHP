@@ -1,6 +1,7 @@
-<?php include('my-functions.php');?>
+<?php include('functions/my-functions.php');
+include('functions/my_products.php'); ?>
 
-<?php include("header.php"); ?>
+<?php include("templates/header.php"); ?>
 
 <!--    --><?php
 //    $products = [
@@ -47,7 +48,7 @@
 <!---->
 <!--    <div>-->
 <!--        <p>--><?php
-//            for($i=0;$i<=3;$i++){
+//            for($i=0;$i<=;$i++){
 //                echo $products[$i]['nom'];
 //            }
 //            ?>
@@ -69,4 +70,4 @@
 
 
 
-<?php include("footer.php"); ?>
+<?php include("templates/footer.php"); ?>

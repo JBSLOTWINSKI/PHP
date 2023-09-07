@@ -8,7 +8,7 @@
     <title>SLOTWINSKI Jean-Baptiste</title>
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
@@ -25,7 +25,7 @@
                 <nav class="header-nav">
                     <a class="liens" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Page d'accueil">Home</a>
                     <a class="liens" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Team">Notre Équipe</a>
-                    <a class="liens" href="catalogue.php" title="Catalogue">Notre Catalogue</a>
+                    <a class="liens" href="../catalogue.php" title="Catalogue">Notre Catalogue</a>
                     <a class="liens" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Contact">Contact</a>
                 </nav>
             </div>
