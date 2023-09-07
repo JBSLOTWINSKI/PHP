@@ -47,31 +47,6 @@ body {
 }
 
 
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Reset */
-
-a {
-    text-decoration: none;
-    color: var(--color-contrast);
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
 
 ul,
 ol {
@@ -129,39 +104,8 @@ ol {
 
 /* Page Produit */
 
-.full-produit{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    margin: 1rem 1rem 1rem 1rem;
-}
 
-.full-produit img {
-    min-width: 50% ;
-    min-height: auto;
-}
 
-.text-produit{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.quantity-product {
-    margin-top: 2rem;
-}
-
-.retour-lien {
-    margin-left: 2rem;
-}
-
-.card-body h5 {
-    text-align: center;
-}
-
-.text-chauteuil {
-    text-align: justify;
-}
 
 /* Page Produit */
 
