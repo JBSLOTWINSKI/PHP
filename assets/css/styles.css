@@ -177,7 +177,7 @@ footer {
 
 .reseaux, .card{
     display: flex;
-    display: flex;
+
     flex-direction: row;
     justify-content: space-around;
     align-items: center;

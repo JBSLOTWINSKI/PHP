@@ -27,11 +27,28 @@ include('functions/my_products.php');
                 <p class="price_discount_ttc">
                     Prix TTC après Discount :
                     <?php echo formatPrice(discountedPrice($product['price'], $product['discount'])) ?>
+                     €
                 </p>
                 <p class="price_discount_ht">
                     Prix HT après Discount :
                     <?php echo formatPrice(priceExcludingTVA(discountedPrice($product['price'], $product['discount']))) ?>
+                     €
                 </p>
+                <form action="cart.php" method="post">
+                    <label for="quantity">Choisissez votre quantité</label>
+                    <br>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    <br>
+                    <a href="cart.php"><button>Ajouter au panier</button></a>
+                    <input id="product_Id" name="product_Id" type="hidden" value="<?php echo $product['id']?>" />
+                </form>
             </li>
         <?php endforeach; ?>
     </ul>
