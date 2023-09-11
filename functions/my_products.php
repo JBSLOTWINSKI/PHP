@@ -29,3 +29,13 @@ function getProducts() {
     ];
 }
 
+function getProduct($id)
+{
+    $products = getProducts();
+    foreach ($products as $product) {
+        if ($product['id'] === $id) {
+            return $product;
+        }
+    }
+}
+

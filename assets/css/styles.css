@@ -104,7 +104,25 @@ ol {
 
 /* Page Produit */
 
+.panier {
+    table-layout: auto;
+    width: 1000px;
+    text-align: center;
+}
+.en-tete {
+    font-weight: bold;
+}
 
+.en-tete-opt {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.tva {
+    font-style: italic;
+    font-size: 15px;
+}
 
 
 /* Page Produit */

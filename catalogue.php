@@ -34,20 +34,21 @@ include('functions/my_products.php');
                     <?php echo formatPrice(priceExcludingTVA(discountedPrice($product['price'], $product['discount']))) ?>
                      €
                 </p>
-                <form action="cart.php" method="post">
-                    <label for="quantity">Choisissez votre quantité</label>
-                    <br>
-                        <select name="quantity" id="quantity">
+                <form action="cart.php" method="POST">
+                    <div class="select">
+                        <label for="quantity">Choisissez votre quantité :</label>
+                        <select type='hidden' name="quantity" id="quantity">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
+                            <option value="7">7</option>
                         </select>
-                    <br>
-                    <a href="cart.php"><button>Ajouter au panier</button></a>
-                    <input id="product_Id" name="product_Id" type="hidden" value="<?php echo $product['id']?>" />
+                    </div>
+                    <input type="hidden" name="id" value="<?php echo $product['id']?>">
+                    <button class="cta">Commander</button>
                 </form>
             </li>
         <?php endforeach; ?>
