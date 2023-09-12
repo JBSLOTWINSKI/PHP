@@ -29,6 +29,33 @@ function getProducts() {
     ];
 }
 
+
+function getTransporteurs() {
+    return [
+        [
+            'id' => '1',
+            'name' => 'Fanny Corp',
+            'low' => '10',
+            'medium' => '50',
+            'heavy' => '500',
+        ],
+        [
+            'id' => '2',
+            'name' => 'Guénaël Corp',
+            'low' => '5',
+            'medium' => '25',
+            'heavy' => '50',
+        ],
+        [
+            'id' => '3',
+            'name' => 'ChouchouBeignet Corp',
+            'low' => '2',
+            'medium' => '100',
+            'heavy' => '100',
+        ],
+    ];
+}
+
 function getProduct($id)
 {
     $products = getProducts();
@@ -36,6 +63,27 @@ function getProduct($id)
         if ($product['id'] === $id) {
             return $product;
         }
+    }
+}
+
+function getTransporteur($idtrans)
+{
+    $transp = getTransporteurs();
+    foreach ($transp as $trans) {
+        if ($trans['id'] === $idtrans) {
+            return $trans;
+        }
+    }
+}
+
+function fraisdelivraison($weight, $select_transp)
+{
+    if ($weight <= 150) {
+        return $select_transp['low'];
+    } elseif ($weight <= 300) {
+        return $select_transp['medium'];
+    } elseif ($weight > 300) {
+        return $select_transp['heavy'];
     }
 }
 
