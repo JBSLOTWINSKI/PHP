@@ -29,6 +29,16 @@ function getProducts() {
     ];
 }
 
+function getProduct($id)
+{
+    $products = getProducts();
+    foreach ($products as $product) {
+        if ($product['id'] === $id) {
+            return $product;
+        }
+    }
+}
+
 
 function getTransporteurs() {
     return [
@@ -56,15 +66,7 @@ function getTransporteurs() {
     ];
 }
 
-function getProduct($id)
-{
-    $products = getProducts();
-    foreach ($products as $product) {
-        if ($product['id'] === $id) {
-            return $product;
-        }
-    }
-}
+
 
 function getTransporteur($idtrans)
 {

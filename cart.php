@@ -20,6 +20,7 @@ $TVA = $prix - $PHT;
 $weight = $produit_panier['weight'] * $quantity;
 $discount = $produit_panier['discount'];
 ?>
+
 <!-- Variables transporteur -->
 
 <?php
@@ -27,7 +28,6 @@ $idtrans = isset($_POST['idtr']) ? $_POST['idtr'] : '1';
 $select_transp = getTransporteur($idtrans);
 $name_trans = $select_transp['name'];
 $prix_livraison = fraisdelivraison($weight, $select_transp);
-
 $prix_ttc = $PHT + $TVA + $prix_livraison;
 ?>
 
