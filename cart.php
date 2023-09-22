@@ -2,6 +2,7 @@
 include('templates/header.php');
 include('functions/my-functions.php');
 include('functions/my_products.php');
+
 ?>
 
 
@@ -10,25 +11,23 @@ include('functions/my_products.php');
 <?php
 $id = $_POST ['id'];
 $quantity = $_POST ['quantity'];
-$produit_panier = getProduct($id);
-$name = $produit_panier['name'];
-$prix_discount = discountedPrice($produit_panier['price'], $produit_panier['discount']);
-$prix = $prix_discount * $quantity;
+$name = $id['name'];
+$prix = $id['price'] * $quantity;
 $PHT = priceExcludingTVA($prix);
 $TVA = $prix - $PHT;
 
-$weight = $produit_panier['weight'] * $quantity;
-$discount = $produit_panier['discount'];
+$weight = $id['weight'] * $quantity;
+
 ?>
 
 <!-- Variables transporteur -->
 
 <?php
-$idtrans = isset($_POST['idtr']) ? $_POST['idtr'] : '1';
-$select_transp = getTransporteur($idtrans);
-$name_trans = $select_transp['name'];
-$prix_livraison = fraisdelivraison($weight, $select_transp);
-$prix_ttc = $PHT + $TVA + $prix_livraison;
+//$idtrans = isset($_POST['idtr']) ? $_POST['idtr'] : '1';
+//$select_transp = getTransporteur($idtrans);
+//$name_trans = $select_transp['name'];
+//$prix_livraison = fraisdelivraison($weight, $select_transp);
+//$prix_ttc = $PHT + $TVA + $prix_livraison;
 ?>
 
 <!-- / Variables -->
@@ -87,16 +86,16 @@ $prix_ttc = $PHT + $TVA + $prix_livraison;
         </form>
 
     </tr>
-    <tr>
-        <td colspan="2"></td>
-        <td>Transport</td>
-        <td><?php echo $prix_livraison ?></td>
-    </tr>
-    <tr>
-        <td colspan="2"></td>
-        <td class="en-tete">Total TTC</td>
-        <td><?php echo formatPrice($prix_ttc) ?> €</td>
-    </tr>
+<!--    <tr>-->
+<!--        <td colspan="2"></td>-->
+<!--        <td>Transport</td>-->
+<!--        <td>--><?php //echo $prix_livraison ?><!--</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan="2"></td>-->
+<!--        <td class="en-tete">Total TTC</td>-->
+<!--        <td>--><?php //echo formatPrice($prix_ttc) ?><!-- €</td>-->
+<!--    </tr>-->
 
 
     <!--Transporteur-->

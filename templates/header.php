@@ -34,3 +34,19 @@
     </header>
 
     <main class="main">
+<?php
+try {
+    $db = new PDO(
+        'mysql:host=localhost;
+    dbname=mydb;
+    charset=utf8',
+        'Beasti',
+        '3tSsFQ4!M(XwGcE6'
+    );
+} catch (Exception $e) {
+    die('Error : ' . $e->getMessage());
+}
+?>
+
+
+

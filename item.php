@@ -2,6 +2,7 @@
 include('functions/my-functions.php');
 include('functions/my_products.php');
 include("templates/header.php");
+
 ?>
 
 <?php
