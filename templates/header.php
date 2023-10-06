@@ -38,10 +38,10 @@
 try {
     $db = new PDO(
         'mysql:host=localhost;
-    dbname=mydb;
+    dbname=test_ikouladb;
     charset=utf8',
-        'Beasti',
-        '3tSsFQ4!M(XwGcE6'
+        'beasti_cn',
+        ';^bE9eEpuyk5aZ5V9M8A6.}-C_3'
     );
 } catch (Exception $e) {
     die('Error : ' . $e->getMessage());
