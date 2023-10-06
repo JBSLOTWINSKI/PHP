@@ -24,9 +24,9 @@
                 </div>
                 <nav class="header-nav">
                     <a class="liens" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Page d'accueil">Home</a>
-                    <a class="liens" href="http://localhost/testphp/cart.php" title="Panier">Panier</a>
-                    <a class="liens" href="http://localhost/testphp/catalogue.php" title="Catalogue">Notre Catalogue</a>
-                    <a class="liens" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Contact">Contact</a>
+                    <a class="liens" href="/cart.php" title="Panier">Panier</a>
+                    <a class="liens" href="/catalogue_db.php" title="Catalogue">Notre Catalogue</a>
+                    <a class="liens" href="/Form.php" title="Contact">Contact</a>
                 </nav>
             </div>
         </div>
@@ -38,10 +38,10 @@
 try {
     $db = new PDO(
         'mysql:host=localhost;
-    dbname=mydb;
+    dbname=test_ikouladb;
     charset=utf8',
-        'Beasti',
-        '3tSsFQ4!M(XwGcE6'
+        'beasti_cn',
+        ';^bE9eEpuyk5aZ5V9M8A6.}-C_3'
     );
 } catch (Exception $e) {
     die('Error : ' . $e->getMessage());
